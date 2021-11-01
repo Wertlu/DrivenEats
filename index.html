@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DrivenEats</title>
+    <link rel="stylesheet" type="text/css" href="reset.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1><em>DrivenEats</em></h1>
+            <h2>Sua comida em 9 minutos</h2>
+        </header>
+        <main>
+            <section class="shelf">
+                <h1>Primeiro, seu prato</h1>
+                <div class="container zero">
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Espaguete.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Espaguete</h1>
+                            <p>250g</p>
+                            <span class="price">R$ <em>12,90</em></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Strogonoff.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Strogonoff</h1>
+                            <p>200g</p>
+                            <span class="price">R$ <em>14,90</em></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Churrasco.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Churrasco</h1>
+                            <p>400g</p>
+                            <span class="price">R$ <em>26,90</em></span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="shelf">
+                <h1>Agora, sua bebida</h1>
+                <div class="container um">
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Refrigerante.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Refrigerante</h1>
+                            <p>500ml</p>
+                            <span class="price">R$ <em>4,24</em></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Água.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Água</h1>
+                            <p>500ml</p>
+                            <span class="price">R$ <em>1,90</em></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Suco.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Suco</h1>
+                            <p>250ml</p>
+                            <span class="price">R$ <em>5,99</em></span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+            <section class="shelf">
+                <h1>Por fim, sua sobremesa</h1>
+                <div class="container dois">
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Mousse.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Mousse</h1>
+                            <p>120g</p>
+                            <span class="price">R$ <em>7,90</em></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Pudim.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Pudim</h1>
+                            <p>100g</p>
+                            <span class="price">R$ <em>6,90</em></span>
+                        </figcaption>
+                    </figure>
+                    <figure class="option" onclick="selection(this)">
+                        <div class="selectedBorder">
+                            <ion-icon name="checkmark-circle"></ion-icon>
+                        </div>
+                        <img src="assets\Brigadeiro.jpg">
+                        <figcaption>
+                            <h1 class="itemName">Brigadeiro</h1>
+                            <p>6 unidades</p>
+                            <span class="price">R$ <em>5,90</em></span>
+                        </figcaption>
+                    </figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="confirm" onclick="confirm()">
+                <span>Selecione os 3 itens para fechar o pedido</span>
+            </div>
+        </footer>
+    </div>
+    <div class="overlay">
+        <div class="overScreen">
+            <div class="popup">
+                <header>
+                    <span><b>Confirme o seu pedido</b></span>
+                </header>
+                <main>
+                    <section>
+                        <span class="itemName0"></span>
+                        <span class="price0"></span>
+                    </section>
+                    <section>
+                        <span class="itemName1"></span>
+                        <span class="price1"></span>
+                    </section>
+                    <section>
+                        <span class="itemName2"></span>
+                        <span class="price2"></span>
+                    </section>
+                    <section>
+                        <span><b>TOTAL</b></span>
+                        <span class="total"><b></b></span>
+                    </section>
+                </main>
+                <footer>
+                    <div class="confirmation" onclick="confirmation()">
+                        <b>Tudo certo, pode pedir!</b>
+                    </div>
+                    <div class="declination" onclick="declination()">
+                        <b>Cancelar</b>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
