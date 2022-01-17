@@ -27,6 +27,9 @@ In the future I intend to add a couter to each option to the client choose more 
 <img align="left" alt="CSS3" height='40' width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/css/css.png" />
 <img align="left" alt="JavaScript" height='40' width="40px" src="https://raw.githubusercontent.com/github/explore/80688e429a7d4ef2fca1e82350fe8e3517d3494d/topics/javascript/javascript.png" />
 
+</br>
+</br>
+
 # How to run
 
 To use and see the model go to: https://driven-eats-neon.vercel.app/
